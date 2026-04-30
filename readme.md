@@ -6,7 +6,7 @@ The ELK Stack runs on a laptop, acting as the central SIEM for log collection, p
 Filebeat runs on a Raspberry Pi, collecting log data and forwarding it to the ELK Stack
 Attacks are executed from a separate desktop computer targeting the Raspberry Pi
 
-All attacks performed, along with any countermeasures (if applicable), are documented below. Each attack has its own dedicated folder, which includes a detailed README file describing:
+All simulated attacks performed, along with any countermeasures (if applicable), are documented below. Each attack has its own dedicated folder, which includes a detailed README file describing:
 
 - the attack scenario
 - execution steps
