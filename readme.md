@@ -19,7 +19,7 @@ This project demonstrates how a SIEM can be used to detect and analyze real-worl
 
 ## Environment
 
-                    ATTACK TRAFFIC
+                  ATTACK TRAFFIC
         +----------------------------------+
         |        Desktop Computer          |
         |        (Attacker Machine)        |
