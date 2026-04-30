@@ -62,6 +62,10 @@ This project demonstrates how a SIEM can be used to detect and analyze real-worl
 
 ## Few remarks
 
+- The environment is fully isolated and accessible only from a single workstation within a private local network. No services are exposed to the public internet.
+
 - "Attacks" are done to a Raspberry Pi system which my desktop normally has access to for example through SSH.
 
 - Raspberry Pi is not publicly available and the services running on it are only available to devices in the local network.
+
+
