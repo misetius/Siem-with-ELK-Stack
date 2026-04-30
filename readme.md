@@ -45,8 +45,8 @@ This project demonstrates how a SIEM can be used to detect and analyze real-worl
                         |  Logs (via Filebeat)
                         v
         +---------------+------------------+
-        |            Laptop               |
-        |            (SIEM)               |
+        |            Laptop                |
+        |            (SIEM)                |
         |                                  |
         |   +--------------------------+   |
         |   |  Elasticsearch           |   |
@@ -60,3 +60,8 @@ This project demonstrates how a SIEM can be used to detect and analyze real-worl
         |                                  |
         +----------------------------------+
 
+## Few remarks
+
+- "Attacks" are done to a Raspberry Pi system which my desktop normally has access to for example through SSH.
+
+- Raspberry Pi is not publicly available and the services running on it are only available to devices in the local network.
