@@ -43,7 +43,6 @@ The connection remains active until it is manually terminated.
 
 ## Mitigation
 
-## Mitigations
 
 According to the [MITRE ATT&CK framework](https://attack.mitre.org/techniques/T1059/), the following mitigations can help reduce the risk of command execution and reverse shell activity:
 
