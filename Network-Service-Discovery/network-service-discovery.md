@@ -40,4 +40,38 @@ According to the [MITRE Corporation](https://attack.mitre.org/) MITRE ATT&CK fra
 
 ### Chosen Strategy
 
-For this demonstration, I chose to apply a port knocking technique to conceal the ports in use. While firewall hardening and automated IP address blocking would likely be more effective in a real-world scenario, they are not suitable for the scope of this demo.
+For this demonstration, I chose to implement a port knocking technique to conceal active ports. Port knocking can be a useful additional layer of security for services such as SSH. However, it should be noted that SSH key-based authentication should always be used alongside it. While firewall hardening and automated IP address blocking would likely be more effective in real-world environments, they are beyond the scope of this demo.
+
+One of the most commonly used tools for implementing port knocking is **knockd**. This tool allows ports to remain hidden until a correct sequence of connection attempts is made. Once the correct sequence is detected, the firewall dynamically opens the specified port for the client.
+
+
+
+```
+[options]
+        UseSyslog
+
+[openSSH]
+        sequence    = 7000,8000,9000
+        seq_timeout = 10
+        command     = sudo ufw allow from %IP% to any port 22
+        tcpflags    = syn
+
+[closeSSH]
+        sequence    = 9000,8000,7000
+        seq_timeout = 10
+        command     = sudo ufw delete allow from %IP% to any port 22
+        tcpflags    = syn
+
+
+```
+
+
+With this configuration, access to the SSH port is restricted and can only be opened for a specific IP address using the correct sequence:
+
+
+```
+knock <ip> 7000 8000 9000
+```
+
+
+After the correct sequence is sent, the firewall allows the client to connect to the SSH service.
