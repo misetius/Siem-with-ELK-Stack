@@ -10,7 +10,7 @@ Attackers typically gather this information using methods like:
 - Vulnerability scanning – identifying known weaknesses in those services
 - Wordlist scanning – probing for commonly used service paths, names, or configurations using predefined lists
 
-## How the attack is done
+## How the Attack Works
 
 
 Port scanning can be performed using a tool called *nmap*. This tool is commonly used to gather information about services running on a target host.
@@ -38,7 +38,7 @@ According to the [MITRE Corporation](https://attack.mitre.org/) MITRE ATT&CK fra
 - **M1031 – Network Intrusion Prevention:** Use network intrusion detection and prevention systems to detect and block remote service scanning activity.  
 - **M1030 – Network Segmentation:** Implement proper network segmentation to protect critical servers and devices from unauthorized discovery and access.
 
-### Chosen Strategy
+### Chosen Mitigation Strategy
 
 For this demonstration, I chose to implement a port knocking technique to conceal active ports. Port knocking can be a useful additional layer of security for services such as SSH. However, it should be noted that SSH key-based authentication should always be used alongside it. While firewall hardening and automated IP address blocking would likely be more effective in real-world environments, they are beyond the scope of this demo.
 

@@ -3,7 +3,7 @@
 According to the [MITRE ATT&CK Command and Scripting Interpreter (T1059)](https://attack.mitre.org/techniques/T1059/), reverse shells are a common technique where an adversary establishes an outbound connection from a compromised system back to an attacker-controlled host. This enables remote command execution while bypassing inbound firewall restrictions, as the connection is initiated from within the target environment.
 
 
-## Suricata reaction to attack
+## Suricatas Reaction to the Attack
 
 <img src="../images/reverse-shell-alert.png">
 
@@ -13,20 +13,8 @@ In current alert settings basic commands such as ls or cd were not recognised.
 
 The main idea behind a reverse shell is that the target initiates the connection, allowing the attacker to bypass inbound firewall restrictions and gain remote command execution on the compromised system.
 
-## How the attack is done
+## How the Attack Works
 
-This demonstration shows how a basic reverse shell works in practice using a client-server model implemented in Python.
-
-
-
-The attack consists of two components:
-
-- **Listener (attacker machine):** Waits for an incoming connection  
-- **Client (target machine):** Initiates the connection back to the attacker  
-
-
-
-### How the attack works
 
 This demonstration shows a simple reverse shell implemented using a client-server model in Python.
 
@@ -62,7 +50,7 @@ According to the [MITRE ATT&CK framework](https://attack.mitre.org/techniques/T1
 
 - **M1021 – Restrict Web-Based Content:** Use script-blocking extensions and ad blockers to prevent execution of malicious web-based scripts.
 
-### Used mitigation method
+### Chosen Mitigation Strategy
 
 In this demonstration, the chosen mitigation was to use an automated antivirus solution with **ClamAV** running with sudo privileges to detect and handle potentially malicious files.
 
