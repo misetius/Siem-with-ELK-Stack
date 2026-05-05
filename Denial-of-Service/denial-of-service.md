@@ -6,6 +6,8 @@ In some cases, attackers may exploit software vulnerabilities to trigger a denia
 
 ## Suricata reaction to attack
 
+<img src="../images/dos.png">
+
 Even though Suricata classifies the alerts generated during the DoS attack under the category Generic Protocol Command Decode, the sheer volume of alerts would, in most cases, strongly indicate that a DoS attack is taking place. 
 
 The attack caused services on the Raspberry Pi to become unavailable, further indicating a denial-of-service condition.
