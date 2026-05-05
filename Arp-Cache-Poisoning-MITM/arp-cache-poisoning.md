@@ -1,6 +1,6 @@
 # Arp Cache Poisoning MITM
 
-According to the [MITRE ATT&CK ARP Cache Poisoning (T1557.002)](https://attack.mitre.org/techniques/T1557/002/) technique, adversaries can manipulate ARP caches to position themselves between communicating devices on a local network. By associating their own MAC address with another device’s IP address, attackers can intercept, monitor, or modify network traffic, enabling activities such as credential theft or data manipulation.
+According to the [MITRE ATT&CK ARP Cache Poisoning MITM](https://attack.mitre.org/techniques/T1557/002/) technique, adversaries can manipulate ARP caches to position themselves between communicating devices on a local network. By associating their own MAC address with another device’s IP address, attackers can intercept, monitor, or modify network traffic, enabling activities such as credential theft or data manipulation.
 
 ## Suricatas Reaction to the Attack
 
@@ -24,7 +24,7 @@ This command sends forged ARP replies to the target, associating the attacker's 
 
 ## Mitigations
 
-According to the [MITRE ATT&CK ARP Cache Poisoning (T1557.002)](https://attack.mitre.org/techniques/T1557/002/), the following mitigations can help reduce the risk of ARP poisoning attacks:
+According to the [MITRE ATT&CK ARP Cache Poisoning MITM](https://attack.mitre.org/techniques/T1557/002/), the following mitigations can help reduce the risk of ARP poisoning attacks:
 
 - **M1042 – Disable or Remove Feature or Program:** Disable ARP cache updates from gratuitous ARP replies where possible.  
 - **M1041 – Encrypt Sensitive Information:** Use encryption (e.g., SSL/TLS) to protect network traffic and credentials.  

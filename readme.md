@@ -1,4 +1,4 @@
-The purpose of this project is to explore and test the Elastic Stack (Elasticsearch, Logstash, Kibana) in a practical environment by simulating cyber attacks.
+The purpose of this project is to explore and test the Elastic Stack (Elasticsearch, Logstash, Kibana) in a practical environment by simulating cyber attacks. All attacks demonstrated in this project are simulated for educational purposes only.
 
 ## In this setup:
 
